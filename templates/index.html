@@ -1,0 +1,90 @@
+<!--DOCTYPE html-->
+
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Biodiversity DashBoard</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <link rel= "stylesheet" type= "text/css" href= "static/style.css">
+    </header>
+
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1>BellyButton Biodiversity DashBoard</h1>
+                <h3>Use the interactive charts below to explore the dataset</h3>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            <div class="panel panel-primary dropdown">
+                                <div class="panel-heading">
+                                        <h5>SELECT SAMPLE</h5>
+                                </div>
+                                <div class="panel-body">
+                                        <select id="selDataset" aria-placeholder="Select Sample" onchange="optionChanged(this.value)">
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    Sample MetaData
+                                </div>
+                                <div class="panel-body metadata">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="PieArea">
+                        <p><strong>Top 10 Sample % Chart</strong></p>
+                        <div id="pie">
+                        </div>
+                </div>
+                <div class="col-md-6" id="GaugeArea">
+                    <p><strong>Belly Button Washing Frequency</strong></p>
+                    <div id="gauge">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12" id="ScatterplotArea">
+                    <p><strong>OTU ID vs Germ Amount(per Sample)</strong></p>
+                    <div id="scatterplot">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--Footer-->
+        <footer class="page-footer center-on-small-only stylish-color-dark">
+            <!--Copyright-->
+            <div class="footer-copyright">
+            <div class="container-fluid">
+                <p style="text-align: center;">
+                © 2018 Copyright: Yoyo Wu
+                </p>
+            </div>
+            </div>
+            <!--/.Copyright-->
+        </footer>
+        <!--/.Footer-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+        <script type="text/javascript" src="static/index.js"></script>
+    </body>
+</html>

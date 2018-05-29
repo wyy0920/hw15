@@ -1,0 +1,44 @@
+.panel-info{
+    text-align: center;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    background-image: url(http://robdunnlab.com/wp-content/uploads/microbes-sem.jpg);
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+#PieArea,
+#GaugeArea,
+#ScatterplotArea{
+    border-width:2px;
+    border-color: rgb(54, 33, 173);
+    border-style: solid;
+    margin:20px;
+    text-align: center;
+    align: center;
+    font-size: 22px;
+    background-color: #FFF;
+}
+
+#PieArea,
+#GaugeArea{
+    width:520;
+    height:520;
+}
+#ScatterplotArea{
+    width: 1315;
+    height: 575;
+}
+
+.footer-copyright{
+    background-color: rgb(14, 13, 13); 
+    color: #FFF;
+}
+
+body{
+    background-color: rgb(193, 209, 226);
+}
+
